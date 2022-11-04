@@ -1,0 +1,12 @@
+{
+  "name": "lit-css-parcel-test",
+  "private": true,
+  "scripts": {
+    "postinstall": "parcel build style.css --no-cache --no-optimize && parcel build style.css --dist-dir dist-optimized --no-cache"
+  },
+  "devDependencies": {
+    "@anteris/parcel-transformer-lit-css": "file:../",
+    "@parcel/optimizer-cssnano": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@anteris/parcel-transformer-lit-css",
+  "version": "0.1.0",
+  "description": "Imports CSS as Lit CSS literals.",
+  "author": "Aidan Casey <aidan.casey@anteris.com>",
+  "license": "MIT",
+  "main": "dist/LitCssTransformer.js",
+  "scripts": {
+    "build": "parcel build ./src/LitCssTransformer.ts",
+    "test": "cd tests && npm i"
+  },
+  "engines": {
+    "parcel": "^2.7.0"
+  },
+  "peerDependencies": {
+    "@lit/reactive-element": "^2.4.1"
+  },
+  "devDependencies": {
+    "@parcel/types": "^2.7.0",
+    "@tsconfig/node12": "^1.0.11",
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.7.0",
+    "minify-html-literals": "^1.3.5"
+  }
+}

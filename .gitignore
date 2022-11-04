@@ -1,0 +1,5 @@
+.idea/
+.parcel-cache/
+node_modules/
+tests/.parcel-cache/
+tests/node_modules/
