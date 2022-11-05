@@ -4,6 +4,7 @@
   "description": "Imports CSS as Lit CSS literals.",
   "author": "Aidan Casey <aidan.casey@anteris.com>",
   "license": "MIT",
+  "source": "src/LitCssTransformer.ts",
   "main": "dist/LitCssTransformer.js",
   "scripts": {
     "build": "parcel build ./src/LitCssTransformer.ts",
@@ -18,7 +19,7 @@
   },
   "devDependencies": {
     "@parcel/types": "^2.7.0",
-    "@tsconfig/node12": "^1.0.11",
+    "@tsconfig/node14": "^1.0.3",
     "mocha": "^10.1.0",
     "parcel": "^2.7.0",
     "typescript": "^4.8.4"
