@@ -10,7 +10,8 @@
     "test": "cd tests && npm test"
   },
   "engines": {
-    "parcel": "^2.7.0"
+    "node": ">=14.x",
+    "parcel": "^2.x"
   },
   "peerDependencies": {
     "lit": "^2.4.0"
