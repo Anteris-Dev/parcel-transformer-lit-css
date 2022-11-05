@@ -1,12 +1,18 @@
 {
-  "name": "lit-css-parcel-test",
+  "name": "parcel-transformer-lit-css-test",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "parcel build style.css --no-cache --no-optimize && parcel build style.css --dist-dir dist-optimized --no-cache"
+    "test": "cd ../ && npm i && cd tests && npm i && npm run build-dev && npm run build-prod && mocha run-tests.js",
+    "build-dev": "parcel build style.css --no-cache --no-optimize",
+    "build-prod": "parcel build style.css --no-cache --dist-dir dist-optimized",
+    "cleanup": "rm -rf .parcel-cache && rm -rf dist && rm -rf dist-optimized"
   },
   "devDependencies": {
     "@anteris/parcel-transformer-lit-css": "file:../",
-    "@parcel/optimizer-cssnano": "^2.7.0",
+    "chai": "^4.3.6",
+    "lit": "^2.4.1",
+    "mocha": "^10.1.0",
     "parcel": "^2.7.0"
   }
 }
